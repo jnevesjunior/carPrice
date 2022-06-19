@@ -29,9 +29,6 @@ struct CarDetails: View {
         NavigationView {
             List {
                 VStack(alignment: .center) {
-                    Text("Detalhes")
-                        .font(.headline.bold())
-                    
                     Chart(data) {
                         LineMark(
                             x: .value("Month", $0.date),
@@ -81,6 +78,7 @@ struct CarDetails: View {
             .listStyle(.plain)
             
         }
+        .navigationBarTitle("Detalhes")
     }
 }
 

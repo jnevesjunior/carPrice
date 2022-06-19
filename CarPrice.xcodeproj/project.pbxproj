@@ -12,7 +12,6 @@
 		6BACBB1C285F8971005A7E70 /* CarSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BACBB1B285F8971005A7E70 /* CarSearch.swift */; };
 		6BACBB1F285FAE17005A7E70 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BACBB1E285FAE17005A7E70 /* Color.swift */; };
 		6BC7CA962858409B00C5A04B /* CarPriceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC7CA952858409B00C5A04B /* CarPriceApp.swift */; };
-		6BC7CA982858409B00C5A04B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC7CA972858409B00C5A04B /* ContentView.swift */; };
 		6BC7CA9A2858409E00C5A04B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BC7CA992858409E00C5A04B /* Assets.xcassets */; };
 		6BC7CA9E2858409E00C5A04B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BC7CA9D2858409E00C5A04B /* Preview Assets.xcassets */; };
 		6BC7CAA82858409E00C5A04B /* CarPriceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC7CAA72858409E00C5A04B /* CarPriceTests.swift */; };
@@ -44,7 +43,6 @@
 		6BACBB1E285FAE17005A7E70 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		6BC7CA922858409B00C5A04B /* CarPrice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarPrice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BC7CA952858409B00C5A04B /* CarPriceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPriceApp.swift; sourceTree = "<group>"; };
-		6BC7CA972858409B00C5A04B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6BC7CA992858409E00C5A04B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6BC7CA9B2858409E00C5A04B /* CarPrice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CarPrice.entitlements; sourceTree = "<group>"; };
 		6BC7CA9D2858409E00C5A04B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -132,7 +130,6 @@
 				6BACBB1A285E2D99005A7E70 /* Components */,
 				6B038DA12859320500744647 /* Scenes */,
 				6BC7CA952858409B00C5A04B /* CarPriceApp.swift */,
-				6BC7CA972858409B00C5A04B /* ContentView.swift */,
 				6BC7CA992858409E00C5A04B /* Assets.xcassets */,
 				6BC7CA9B2858409E00C5A04B /* CarPrice.entitlements */,
 				6BC7CA9C2858409E00C5A04B /* Preview Content */,
@@ -296,7 +293,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B038DA0285931FF00744647 /* CarDetails.swift in Sources */,
-				6BC7CA982858409B00C5A04B /* ContentView.swift in Sources */,
 				6BACBB1F285FAE17005A7E70 /* Color.swift in Sources */,
 				6BACBB1C285F8971005A7E70 /* CarSearch.swift in Sources */,
 				6BACBB19285E2D93005A7E70 /* DetailItem.swift in Sources */,
