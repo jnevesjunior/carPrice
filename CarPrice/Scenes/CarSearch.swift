@@ -44,11 +44,11 @@ struct CarSearch: View {
                 NavigationLink(destination: CarDetails()) {
                     Text("Pesquisar")
                         .bold()
-                        .tint(.black)
+                        .tint(Color.label)
                         .padding(.all, 16.0)
                         .background(
                             RoundedRectangle(cornerRadius: 10)
-                                .stroke(.black, lineWidth: 2)
+                                .stroke(Color.label, lineWidth: 2)
                         )
                 }
                 .navigationTitle("Car Price")

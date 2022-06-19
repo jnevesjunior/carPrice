@@ -21,10 +21,8 @@ struct DetailItem: View {
         }
         .frame(maxWidth: .infinity, alignment: alignment)
         .padding(.all)
-        .overlay(
-            RoundedRectangle(cornerRadius: 12)
-                .stroke(.gray, lineWidth: 1)
-        )
+        .background(Color.secondarySystemBackground)
+        .cornerRadius(12)
     }
 }
 
