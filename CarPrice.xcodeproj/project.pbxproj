@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6B038DA0285931FF00744647 /* CarDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B038D9F285931FF00744647 /* CarDetails.swift */; };
+		6B0CE829285A6C4C0012FAC2 /* ChartsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0CE828285A6C4C0012FAC2 /* ChartsExample.swift */; };
+		6BACBB19285E2D93005A7E70 /* DetailItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BACBB18285E2D93005A7E70 /* DetailItem.swift */; };
 		6BC7CA962858409B00C5A04B /* CarPriceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC7CA952858409B00C5A04B /* CarPriceApp.swift */; };
 		6BC7CA982858409B00C5A04B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC7CA972858409B00C5A04B /* ContentView.swift */; };
 		6BC7CA9A2858409E00C5A04B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BC7CA992858409E00C5A04B /* Assets.xcassets */; };
@@ -36,6 +38,8 @@
 
 /* Begin PBXFileReference section */
 		6B038D9F285931FF00744647 /* CarDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetails.swift; sourceTree = "<group>"; };
+		6B0CE828285A6C4C0012FAC2 /* ChartsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsExample.swift; sourceTree = "<group>"; };
+		6BACBB18285E2D93005A7E70 /* DetailItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailItem.swift; sourceTree = "<group>"; };
 		6BC7CA922858409B00C5A04B /* CarPrice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarPrice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BC7CA952858409B00C5A04B /* CarPriceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPriceApp.swift; sourceTree = "<group>"; };
 		6BC7CA972858409B00C5A04B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -78,8 +82,17 @@
 			isa = PBXGroup;
 			children = (
 				6B038D9F285931FF00744647 /* CarDetails.swift */,
+				6B0CE828285A6C4C0012FAC2 /* ChartsExample.swift */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		6BACBB1A285E2D99005A7E70 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				6BACBB18285E2D93005A7E70 /* DetailItem.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		6BC7CA892858409B00C5A04B = {
@@ -105,6 +118,7 @@
 		6BC7CA942858409B00C5A04B /* CarPrice */ = {
 			isa = PBXGroup;
 			children = (
+				6BACBB1A285E2D99005A7E70 /* Components */,
 				6B038DA12859320500744647 /* Scenes */,
 				6BC7CA952858409B00C5A04B /* CarPriceApp.swift */,
 				6BC7CA972858409B00C5A04B /* ContentView.swift */,
@@ -272,7 +286,9 @@
 			files = (
 				6B038DA0285931FF00744647 /* CarDetails.swift in Sources */,
 				6BC7CA982858409B00C5A04B /* ContentView.swift in Sources */,
+				6BACBB19285E2D93005A7E70 /* DetailItem.swift in Sources */,
 				6BC7CA962858409B00C5A04B /* CarPriceApp.swift in Sources */,
+				6B0CE829285A6C4C0012FAC2 /* ChartsExample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
