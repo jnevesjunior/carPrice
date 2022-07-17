@@ -17,19 +17,19 @@ struct CarSearch: View {
             VStack {
                 List {
                     Section("Escolha a Marca") {
-                        NavigationLink(destination: CarDetails()) {
+                        NavigationLink(destination: SearchOptions(searchOption: .brand)) {
                             FilterOption(title: "Marca", description: selectedBrand)
                         }
                         .buttonStyle(.plain)
                     }
                     
                     Section("Escolha o Modelo e o Ano") {
-                        NavigationLink(destination: CarDetails()) {
+                        NavigationLink(destination: SearchOptions(searchOption: .model)) {
                             FilterOption(title: "Brand", description: selectedBrand)
                         }
                         .buttonStyle(.plain)
                         
-                        NavigationLink(destination: CarDetails()) {
+                        NavigationLink(destination: SearchOptions(searchOption: .year)) {
                             FilterOption(title: "Year", description: selectedYear)
                         }
                         .buttonStyle(.plain)
