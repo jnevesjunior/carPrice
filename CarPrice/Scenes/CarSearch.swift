@@ -8,34 +8,31 @@
 import SwiftUI
 
 struct CarSearch: View {
-    @State var brand: String = "1"
-    @State var model: String = "1"
-    @State var year: String = "1"
+    @State var selectedBrand: String = "brand"
+    @State var selectedModel: String = "model"
+    @State var selectedYear: String = "year"
     
     var body: some View {
         NavigationView {
             VStack {
                 List {
                     Section("Escolha a Marca") {
-                        Picker("Marca", selection: $brand) {
-                            ForEach(["1", "2", "3", "4"], id: \.self) {
-                                Text($0)
-                            }
+                        NavigationLink(destination: CarDetails()) {
+                            FilterOption(title: "Marca", description: selectedBrand)
                         }
+                        .buttonStyle(.plain)
                     }
                     
                     Section("Escolha o Modelo e o Ano") {
-                        Picker("Modelo", selection: $model) {
-                            ForEach(["1", "2", "3", "4"], id: \.self) {
-                                Text($0)
-                            }
+                        NavigationLink(destination: CarDetails()) {
+                            FilterOption(title: "Brand", description: selectedBrand)
                         }
+                        .buttonStyle(.plain)
                         
-                        Picker("Ano", selection: $year) {
-                            ForEach(["1", "2", "3", "4"], id: \.self) {
-                                Text($0)
-                            }
+                        NavigationLink(destination: CarDetails()) {
+                            FilterOption(title: "Year", description: selectedYear)
                         }
+                        .buttonStyle(.plain)
                     }
                 }
                 .frame(height: 230)
