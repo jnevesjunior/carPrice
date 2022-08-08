@@ -26,7 +26,7 @@ struct SearchOptionsView: View {
     let searchOption: SearchOption
     
     @State var searchText: String = ""
-    @State private var options:[Options] = load("options.json")
+    @State private var options: [Options] = load("options.json")
     
     var body: some View {
         NavigationView {
