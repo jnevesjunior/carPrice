@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		6B038DA0285931FF00744647 /* CarDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B038D9F285931FF00744647 /* CarDetails.swift */; };
+		6B51E494288E098200540A70 /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B51E493288E098200540A70 /* Options.swift */; };
+		6B51E498288E0DAC00540A70 /* options.json in Resources */ = {isa = PBXBuildFile; fileRef = 6B51E497288E0DAC00540A70 /* options.json */; };
+		6B7A0EF828A0ADCA004DC7C9 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7A0EF728A0ADCA004DC7C9 /* ModelData.swift */; };
 		6B84A4512884B25D006C78EE /* FilterOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B84A4502884B25D006C78EE /* FilterOption.swift */; };
-		6B8660462884B72600355831 /* SearchOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8660452884B72600355831 /* SearchOptions.swift */; };
+		6B8660462884B72600355831 /* SearchOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8660452884B72600355831 /* SearchOptionsView.swift */; };
 		6BACBB19285E2D93005A7E70 /* DetailItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BACBB18285E2D93005A7E70 /* DetailItem.swift */; };
 		6BACBB1C285F8971005A7E70 /* CarSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BACBB1B285F8971005A7E70 /* CarSearch.swift */; };
 		6BACBB1F285FAE17005A7E70 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BACBB1E285FAE17005A7E70 /* Color.swift */; };
@@ -40,8 +43,11 @@
 
 /* Begin PBXFileReference section */
 		6B038D9F285931FF00744647 /* CarDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetails.swift; sourceTree = "<group>"; };
+		6B51E493288E098200540A70 /* Options.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
+		6B51E497288E0DAC00540A70 /* options.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = options.json; sourceTree = "<group>"; };
+		6B7A0EF728A0ADCA004DC7C9 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		6B84A4502884B25D006C78EE /* FilterOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterOption.swift; sourceTree = "<group>"; };
-		6B8660452884B72600355831 /* SearchOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchOptions.swift; sourceTree = "<group>"; };
+		6B8660452884B72600355831 /* SearchOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchOptionsView.swift; sourceTree = "<group>"; };
 		6BACBB18285E2D93005A7E70 /* DetailItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailItem.swift; sourceTree = "<group>"; };
 		6BACBB1B285F8971005A7E70 /* CarSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSearch.swift; sourceTree = "<group>"; };
 		6BACBB1E285FAE17005A7E70 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -82,14 +88,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6B038DA12859320500744647 /* Scenes */ = {
+		6B038DA12859320500744647 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				6B51E48A288DFB5C00540A70 /* Search */,
 				6B038D9F285931FF00744647 /* CarDetails.swift */,
 				6BACBB1B285F8971005A7E70 /* CarSearch.swift */,
-				6B8660452884B72600355831 /* SearchOptions.swift */,
+				6B7A0EF728A0ADCA004DC7C9 /* ModelData.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		6B51E48A288DFB5C00540A70 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				6B51E492288E08F800540A70 /* Models */,
+				6B51E491288E05B900540A70 /* Scenes */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		6B51E491288E05B900540A70 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				6B8660452884B72600355831 /* SearchOptionsView.swift */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		6B51E492288E08F800540A70 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6B51E493288E098200540A70 /* Options.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		6BACBB1A285E2D99005A7E70 /* Components */ = {
@@ -134,11 +166,12 @@
 			children = (
 				6BACBB1D285FADF8005A7E70 /* Extensions */,
 				6BACBB1A285E2D99005A7E70 /* Components */,
-				6B038DA12859320500744647 /* Scenes */,
+				6B038DA12859320500744647 /* Domain */,
+				6BC7CA9C2858409E00C5A04B /* Preview Content */,
 				6BC7CA952858409B00C5A04B /* CarPriceApp.swift */,
+				6B51E497288E0DAC00540A70 /* options.json */,
 				6BC7CA992858409E00C5A04B /* Assets.xcassets */,
 				6BC7CA9B2858409E00C5A04B /* CarPrice.entitlements */,
-				6BC7CA9C2858409E00C5A04B /* Preview Content */,
 			);
 			path = CarPrice;
 			sourceTree = "<group>";
@@ -274,6 +307,7 @@
 			files = (
 				6BC7CA9E2858409E00C5A04B /* Preview Assets.xcassets in Resources */,
 				6BC7CA9A2858409E00C5A04B /* Assets.xcassets in Resources */,
+				6B51E498288E0DAC00540A70 /* options.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,10 +334,12 @@
 			files = (
 				6B84A4512884B25D006C78EE /* FilterOption.swift in Sources */,
 				6B038DA0285931FF00744647 /* CarDetails.swift in Sources */,
+				6B7A0EF828A0ADCA004DC7C9 /* ModelData.swift in Sources */,
 				6BACBB1F285FAE17005A7E70 /* Color.swift in Sources */,
+				6B51E494288E098200540A70 /* Options.swift in Sources */,
 				6BACBB1C285F8971005A7E70 /* CarSearch.swift in Sources */,
 				6BACBB19285E2D93005A7E70 /* DetailItem.swift in Sources */,
-				6B8660462884B72600355831 /* SearchOptions.swift in Sources */,
+				6B8660462884B72600355831 /* SearchOptionsView.swift in Sources */,
 				6BC7CA962858409B00C5A04B /* CarPriceApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
